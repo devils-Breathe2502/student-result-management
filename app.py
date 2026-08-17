@@ -7,8 +7,7 @@ init_db()
 def calculate_result(marks1, marks2, marks3):
     total = marks1 + marks2 + marks3
     percentage = round(total / 3, 2)
-    # temporary change: raise A+ threshold to cause CI failure for demo
-    if percentage >= 99:
+    if percentage >= 90:
         grade = "A+"
     elif percentage >= 75:
         grade = "A"
